@@ -53,3 +53,30 @@ function operation4(){
     }
     document.getElementById('result04').innerText = t3_result;
 }
+
+//Task 05
+var sub_name,marks, marks_total, total, percentage, p_table;
+total = 100;
+marks_total = 0;
+p_table = "";
+p_footer = "";
+function operation5(){
+    for(var i = 1; i <=3; i++){
+        sub_name = prompt("Enter subject name ");
+        marks = parseInt(prompt("Enter marks obtained in " + sub_name));
+        percentage = (marks / total) * 100;
+        marks_total += marks;
+        
+        p_table += "<tr><td>"+ sub_name +"</td><td>"+ total +"</td><td>"+ marks +"</td><td>"+ percentage +"</td></tr>";
+        console.log(p_table);
+    }
+    
+    document.getElementById('marksheet').innerHTML += p_table;
+
+    percentage = (marks_total/(total*3)) * 100;
+
+    p_footer += "<tr><td></td><td>"+ (total * 3) +"</td><td>"+ marks_total +"</td><td>"+ percentage +"</td></tr>";
+    console.log(p_footer);
+    document.getElementById('marksheet').innerHTML += p_footer;
+
+}
