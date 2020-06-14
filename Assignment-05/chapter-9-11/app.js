@@ -96,3 +96,38 @@ function run(){
         alert("car is smaller than cat");
     }
 }
+
+//Task 06
+var marks, percentage, result, grade, remarks, display;
+marks = 0;
+var total = 100;
+function result_calc(){
+    for(var i = 1; i <=3; i++){
+        marks += parseInt(prompt("Enter marks obtained in Subject No. " + i + " out of 100"));
+    }
+
+    percentage = Math.round((marks / (total * 3)) * 100);
+
+    if(percentage >= 80){
+        grade = "A1";
+        remarks= "Excellent";
+        display = "Total Marks: " + total * 3 + "\n Marks Obtained: " + marks + "\n Percentage: " + percentage + " \n Grade: " + grade + "\n Remarks: " + remarks;
+    }
+    else if(percentage >= 70){
+        grade = "A";
+        remarks= "Good";
+        display = "Total Marks: " + total * 3 + "\n Marks Obtained: " + marks + "\n Percentage: " + percentage + " \n Grade: " + grade + "\n Remarks: " + remarks;
+    }
+    else if(percentage >= 60){
+        grade = "B";
+        remarks= "You need to improve";
+        display = "Total Marks: " + total * 3 + "\n Marks Obtained: " + marks + "\n Percentage: " + percentage + " \n Grade: " + grade + "\n Remarks: " + remarks;
+    }
+    else{
+        grade = "Fail";
+        remarks= "Sorry"
+        display = "Total Marks: " + total * 3 + "\n Marks Obtained: " + marks + "\n Percentage: " + percentage + " \n Grade: " + grade + "\n Remarks: " + remarks;
+    }
+
+    document.getElementById('result').innerHTML = display;
+}
