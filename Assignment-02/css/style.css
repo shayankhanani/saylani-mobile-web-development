@@ -1,0 +1,123 @@
+body{
+    margin: 0px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    height: auto;
+}
+.logo-container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    font-size: 2em;
+    font-weight: 100;
+}
+p {
+    font-size: small;
+    color: dimgray;
+    text-align: center;
+}
+
+.note{
+    text-align: left;
+    color: indigo;
+}
+
+table{
+    width: 100%;
+    margin: 0 auto;
+}
+
+td{
+    padding: 0.5em;
+    font-size: 12px;
+    width: 150px;
+    text-align: left;
+}
+
+label{
+    color: rgb(70, 70, 70);
+    text-transform: uppercase;
+    font-size: 12px;   
+}
+
+input, select{
+    border: none;
+    padding: 0.6em;
+}
+input[type='text'],input[type='textarea'],input[type='email']{
+    width: 65%;
+    border-bottom: 1px solid black;
+}
+
+select{
+    padding: 1em;
+    width: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    padding: 10px 0px;
+    font-weight: bold;
+    background-color: rgb(17, 197, 17);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+    transition: linear 0.25s;
+    background-color: #3f51b5;
+}
+
+.pop-center{
+    top: 50%;
+    left: 50%;
+    padding: 2em;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+.pop-center h1{
+    color: green;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 0.25em;
+}
+
+.pop-center h3{
+    color: rgb(73, 73, 73);
+    font-weight: 600;
+}
+
+.success-icon{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+a.back{
+    color: green;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+a.back:hover {
+    font-size: 1.65em;
+    color: black;
+    transition: linear 1s;
+}
