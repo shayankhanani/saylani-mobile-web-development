@@ -131,3 +131,94 @@ function result_calc(){
 
     document.getElementById('result').innerHTML = display;
 }
+
+//Task 07
+var secret_num, prompt_num;
+
+
+function guess(){
+    secret_num = Math.round(Math.random() * 10);
+    console.log(secret_num);
+    prompt_num = parseInt(prompt("Guess the number form 1 to 10"));
+    if(prompt_num === secret_num){
+        alert("Bingo!!!");
+    }
+    else if( prompt_num === secret_num + 1){
+        alert("Close enough to the correct answer");
+    }
+    else{
+        alert("Sorry! Try Again!")
+    }
+}
+
+//Task 08
+var d_num;
+
+function check_d(){
+    
+    d_num = parseInt(prompt("Enter the number to check"));
+    if(d_num % 3 === 0){
+        alert("The number is divisible by 3");
+    }
+    
+    else{
+        alert("The number is not divisible by 3")
+    }
+}
+
+//Task 09
+var p_num;
+function check_p(){
+    p_num = parseInt(prompt("Enter the number to check if it is even or odd")); 
+    if(p_num % 2 === 0){
+        alert("The number is Even");
+    }
+    else{
+        alert("The number is odd");
+    }
+}
+
+//Task 10
+var t_num;
+function check_t(){
+    t_num = parseInt(prompt("Enter the temperature of outside")); 
+    if(t_num > 40){
+        alert("It is too hot outside");
+    }
+    else if(t_num > 30){
+        alert("The Weather today is Normal");
+    }
+    else if(t_num > 20){
+        alert("Today’s Weather is cool");
+    }
+    else{
+        alert("OMG! Today’s weather is so Cool.");
+    }
+}
+
+//Task 11
+var f_num,s_num,calc,op_calc;
+function check_c(){
+    f_num = parseInt(prompt("Enter the First Number")); 
+    s_num = parseInt(prompt("Enter the Second Number")); 
+    calc = prompt("Enter Operation + , - , * or /"); 
+    if(calc === "+"){
+        op_calc = f_num + s_num;
+        alert("The result of the operation " + f_num + calc + s_num + " is: " +  op_calc);
+    }
+    else if(calc === "-"){
+        op_calc = f_num - s_num;
+        alert("The result of the operation " + f_num + calc + s_num + " is: " +  op_calc);
+    }
+    else if(calc === "*"){
+        op_calc = f_num * s_num;
+        alert("The result of the operation " + f_num + calc + s_num + " is: " +  op_calc);
+    }
+    else if(calc === "/"){
+        op_calc = f_num / s_num;
+        alert("The result of the operation " + f_num + calc + s_num + " is: " +  op_calc);
+    }
+    else{
+        alert("Invalid Operation")
+    }
+}
