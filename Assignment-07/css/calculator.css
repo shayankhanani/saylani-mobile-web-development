@@ -1,0 +1,10 @@
+.keys{
+    padding: 0.5rem 1rem;  /*0.35 , 05rem*/
+    font-size: 1rem; /*0.8 rem*/
+    font-family: monospace;
+    width: 3.5rem; /*3rem*/
+}
+
+.answer{
+    text-align: right;
+}
