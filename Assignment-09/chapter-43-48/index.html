@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 43-48</title>
+</head>
+<body>
+    <p id="task01">Task 01</p>
+    <a href=# onclick="task01()">Show Alert on Click</a> <br /><br>
+    <hr /> <br />
+
+    <p id="task02">Task 02</p>
+    <h3>Mobile Phone Lookup</h3>
+    <img src="img/iphone-4s.png" alt="iPhone4s" width="100px" onclick="task02()">
+    <img src="img/iphone-5.png" alt="iPhone5" width="82px" onclick="task02()">
+    <img src="img/iphone-6.png" alt="iPhone6" width="180px" onclick="task02()">
+    <img src="img/iphone-7.png" alt="iPhone7" width="220px" onclick="task02()">
+    <img src="img/iphone-8.png" alt="iPhone8" width="150px" onclick="task02()"><br/>
+    <hr /> <br />
+
+    <p id="task03">Task 03</p>
+    <h3>Students Records</h3>
+    <table>
+        <tr>
+            <td>S.No</td>
+            <td>Name</td>
+            <td>Class</td>
+            <td>Action</td>
+        </tr>
+        
+        <tr>
+            <td>0</td>
+            <td>Shayan</td>
+            <td>BS</td>
+            <td><button onclick="task03()">Delete</button></td>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td>Joe</td>
+            <td>L.L.B</td>
+            <td><button onclick="task03()">Delete</button></td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>Max</td>
+            <td>MS</td>
+            <td><button onclick="task03()">Delete</button></td>
+        </tr>
+    </table>
+    <hr /> <br />
+
+    <p id="task04">Task 04</p>
+    <h3>Mouseover Effect</h3>
+    <img src="img/iphone-4s.png" id="phone" alt="iPhone4s" width="100px" onmouseover="task04('img/iphone-5.png')" onmouseout="task04('img/iphone-4s.png')">
+    <hr /> <br />
+    
+    <p id="task04">Task 05</p>
+    <h3>Counter</h3>
+    <h5 id="counter">0</h5>
+    <button id="increment" onclick="task05a()">+</button>
+    <button id="decrement" onclick="task05b()">-</button>
+</body>
+<script src="app.js"></script>
+</html>
