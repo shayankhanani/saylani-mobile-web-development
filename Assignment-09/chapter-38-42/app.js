@@ -1,3 +1,4 @@
+//task 01
 var res = 1;
 function cal_power(a, b) {
     if (b > 0) {
@@ -41,7 +42,7 @@ function task02() {
 }
 
 // task03
-var s, a, b, c;
+var s, a, b, c, d;
 function areaT() {
     return s * (s - a) * (s - b) * (s - c);
 }
@@ -119,6 +120,34 @@ function task06(){
     var input = prompt("Enter string");
     
     alert("String withour Vowels: "+ deleteVowels(input));
+}
+
+//task07
+// var vows = ['a','e','i','o','u'];
+// var cons = [];
+// function cons_vowels(i){
+//     var s = i.split(" ");
+//     for(var a = 0; a < s.length; a++){
+//         var t = s[a].split('');
+//         console.log(t);
+//         for(var b = 0; b < t.length; b++){
+//             for(var c = 0; c < vows.length; c++){
+//                 console.log(a)
+//                 if(t[b] === vows[c] && t[b+1] === vows[c]){
+//                     cons.push(t[b] + t[b+1]);
+//                 }
+//                 else{
+//                     continue;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+function task07(){
+    var inp = prompt("Enter String To Find Consecutive Vowels");
+    cons_vowels(inp);
+    alert(cons);
 }
 
 //task 08
