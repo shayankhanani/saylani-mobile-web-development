@@ -79,5 +79,5 @@ function task11(){
     var n = document.getElementById('email');
     var first = n.parentNode;
     document.getElementById('parent').innerHTML = "Parent Node Type is: "+ first.nodeType + " and " ;
-    document.getElementById('parent').innerHTML += " its Node Name is: "+ first.nodeName + "=> " + first.innerHTML;
+    document.getElementById('parent').innerHTML += " its Node Name is: "+ first.nodeName + "=> <br/>" + first.innerHTML;
 }
