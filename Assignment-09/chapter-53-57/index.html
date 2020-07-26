@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 53 - 57</title>
+    <style>
+        body {
+            margin: 0 auto;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            margin: auto;
+            width: 800px;
+        }
+        /* The Close Button */
+        .close {
+            color: #fafafa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: rgb(66, 66, 66);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h2{
+            text-align: center;
+        }
+
+        .wrapper{
+            width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .btnGrp{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Task 01-->
+    <h2>Task 01</h2>
+    <table>
+        <tr>
+            <td><img src="img/01.jpg" onclick="openModal(this)" alt="nature-01" width="200" height="150"></td>
+            <td><img src="img/02.jpg" onclick="openModal(this)" alt="nature-01" width="200" height="150"></td>
+            <td><img src="img/03.jpg" onclick="openModal(this)" alt="nature-01" width="200" height="150"></td>
+            <td><img src="img/04.jpg" onclick="openModal(this)" alt="nature-01" width="200" height="150"></td>
+        </tr>
+        
+    </table>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="imgModal" alt="">
+        </div>
+
+    </div>
+
+    <h2>Task 02</h2>
+    <div class="wrapper">
+        <p id="demoText" style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt aut unde repellendus molestias ea voluptatum enim animi exercitationem cupiditate. Ab itaque aperiam rerum hic incidunt saepe sed tempora quos nihil vero possimus explicabo aliquam, fuga praesentium, facilis corporis, aliquid repellat officia dolores ipsa excepturi quia deleniti earum. Aliquid, ratione in.</p>
+        <div class="btnGrp">
+            <button onclick="zoomIn()">+</button>
+            <button onclick="zoomOut()">-</button>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
