@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body><div><h1>DOM</h1><div id="form-content" class="content"><label for="first-name">First Name</label><input type="text" id="first-name"/><label for="last-name">Last Name</label> <input type="text" id="last-name"/><label for="email">Email</label><input type="text" id="email"/></div><div id="main-content" class="content"><p class="render">First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render">Email : alexbank@example.com</p><p class="render">Country : Pakistan</p><p class="render">Contact : +92 300 1234567</p></div></div>
+
+    <button onclick="task01()">Getting element of id “main-content” and assign them in a variable</button>    
+    <button onclick="task02()">Display main-content child elements</button>
+    <br/>
+    <br/>
+    <div id="display-main-content"></div>
+    <br/>
+    <br/>
+    <button onclick="task03()">Display render child elements</button>
+    <br/>
+    <br/>
+    <div id="display-render"></div>
+    <br/>
+    <br/>
+    <button onclick="task04()">Fill Element with #id first-name</button>
+    <br/>
+    <br/>
+    <button onclick="task05()">Fill Elements with #id Last Name and Email</button>
+
+    <br/>
+    <h3>Part 2</h3>
+    <button onclick="task06()">Node type of element having id “form-content"</button>
+    <br/>
+    <div id="nType"></div>
+    <br/>
+    <br/>
+    <button onclick="task07()">Node type of element having id “lastName"</button>
+    <br/>
+    <div id="nTypelastName"></div>
+    <br/>
+    <br/>
+    <button onclick="task08()">Update child node of “lastName"</button>
+    <br/>
+    <br/>
+    <br/>
+    <button onclick="task09()">First and Last Child of id “main-content"</button>
+    <br/>
+    <div id="child4MainContent"></div>
+    <br/>
+    <br/>
+    <button onclick="task10()">Next and Previous Siblings of id “lastName"</button>
+    <br/>
+    <div id="siblings"></div>
+    <br/>
+    <br/>
+    <button onclick="task11()">Parent Node and Type of id “email"</button>
+    <br/>
+    <div id="parent"></div>
+
+</body>
+<script src="app.js"></script>
+</html>
