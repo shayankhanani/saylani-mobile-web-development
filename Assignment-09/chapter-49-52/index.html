@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaptet 49 - 52</title>
+    <style>
+        .read{
+            width: 1024px;
+            height: 140px;
+            text-align: justify;
+            overflow: hidden;
+        }
+
+        .table, .th, .td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="task01">Task 01 Signup Form</h2>
+    <table>
+        <tr>
+            <td><label for="fname">First Name</label></td>
+            <td><input type="text" name="fname" id="fname"><br/></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td><input type="text" name="lname" id="lname"><br/></td>
+        </tr>
+        <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="number" name="age" id="age"><br/></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender</label><br/></td>
+            <td><input type="radio" name="gender" id="male" value="Male">Male
+            <input type="radio" name="gender" id="female" value="Female">Female</td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="task01()">Get Info</button> <br /><br>
+            </td>
+        </tr>
+    </table>
+    <h6>Visitor Informmation will be displayed below</h6>
+    <div id="info"></div>
+    <hr /> <br />
+
+    <h2 id="task02">Task 02</h2>
+    <div id="read" class="read">
+        <p style="width: auto; height: 100px;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium rerum perferendis fugit, natus accusantium laudantium dignissimos hic, possimus eligendi repudiandae amet voluptatem ipsam reprehenderit mollitia voluptatum. Officiis perferendis alias molestias!
+            Ab, nesciunt. Repudiandae sapiente minima quam veniam deserunt dignissimos est sequi. Delectus ex consectetur tenetur, magni perspiciatis tempore aut quae ipsam dicta corporis aspernatur! Magnam accusantium quisquam corrupti vero quas!
+            Porro laudantium necessitatibus vero non error vitae suscipit, eaque ut officiis dolore nostrum blanditiis placeat repudiandae temporibus, iure id praesentium illo sint optio iusto aspernatur cumque. Repudiandae corrupti maxime quod.
+            Dolorum expedita distinctio nobis delectus atque laudantium doloremque! Impedit quae obcaecati perspiciatis dolorum itaque, sit enim placeat debitis accusantium sunt expedita nam ipsa sequi corporis cumque! Molestias nostrum placeat laboriosam!
+            Molestiae, quas porro adipisci harum, non earum nesciunt dolorem reprehenderit ea fuga placeat possimus perferendis consequuntur omnis enim soluta dignissimos, impedit inventore quos! Quo dicta, aut error inventore perspiciatis non.
+            Animi et, repellendus, fugiat accusantium error corporis sint accusamus ex ea quidem ad repellat amet laboriosam necessitatibus quaerat odio laudantium culpa voluptates sed aspernatur modi, non asperiores architecto nisi? Enim?
+            Necessitatibus ea numquam tempore recusandae, alias veniam laudantium nisi quasi magnam perspiciatis nihil enim distinctio vitae architecto, ex libero. Dolorum quam ipsa laborum, nesciunt suscipit aliquam atque dignissimos harum blanditiis!
+            Minus error nam vero corporis nisi facere. Iure nihil molestiae laudantium nostrum aliquam odio, veritatis explicabo expedita sed provident ipsa ipsum aspernatur molestias distinctio voluptatem ea, delectus ratione quo adipisci.
+            Provident sed magni, laudantium ullam, porro atque, ipsa quidem cumque saepe error nihil at. Facere, dolor explicabo eligendi voluptatibus dolorum minima, impedit, dicta cumque provident dolore corporis pariatur itaque tempore!
+        </p>
+    </div>
+    <br/>
+    <button onclick="task02()">Read More..</button> <br /><br>
+    <hr /> <br />
+
+    <h2 id="task02">Task 03</h2>
+
+    <table id="formData">
+        <tr>
+            <td><label for="sname">First Name</label></td>
+            <td><input type="text" name="sname" id="sname"><br/></td>
+        </tr>
+        <tr>
+            <td><label for="slname">Last Name</label></td>
+            <td><input type="text" name="slname" id="slname"><br/></td>
+        </tr>
+        <tr>
+            <td><label for="sage">Age</label></td>
+            <td><input type="number" name="sage" id="sage"><br/></td>
+        </tr>
+        <tr>
+            <td><label for="sgender">Gender</label><br/></td>
+            <td><input type="radio" name="sgender" id="male" value="Male">Male
+            <input type="radio" name="sgender" id="female" value="Female">Female</td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="crudApp.add()">Get Info</button> <br /><br>
+            </td>
+        </tr>
+    </table>
+    <hr /> <br />
+
+    <div id="post">
+        
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
